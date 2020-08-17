@@ -1,0 +1,428 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.center{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+	z-index: 3;
+}
+
+html,body{
+	height: 100%;
+}
+
+section.inicio-site .foto-banner{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background-image: url('../imagens/imagem-banner.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 2;
+}
+
+.foto-banner > .center{
+	padding: 10px 2%;
+	position: relative;
+	z-index: 3;
+}
+
+.icones{
+	text-align: right;
+}
+
+.icones a{
+	text-decoration: none;
+	padding: 0px 20px;
+	color: #F13C20; 
+}
+
+.icones a i{
+	font-size: 18px;
+}
+
+header{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px 0;
+	color: white;
+	z-index: 3;
+}
+
+
+.logomarca{
+	padding: 0 0 10px 0;
+	width: 50%;
+	text-align: left;
+	color: white;
+	border-bottom: 2px solid #ccc;
+}
+
+.logomarca a{
+	color: white;
+	text-decoration: none;
+}
+
+nav.menu-desktop{
+	padding: 0 0 10px 0;
+	text-align: right;
+	width: 50%;
+	border-bottom: 2px solid #ccc;
+}
+
+nav.menu-desktop ul{
+	list-style-type: none;
+}
+
+nav.menu-desktop ul li{
+	display: inline-block;
+	text-align: right;
+	padding: 0 20px;
+}
+
+nav.menu-desktop ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+nav.menu-desktop ul li a:hover{
+	text-decoration: underline;
+}
+
+nav.menu-mobile{
+	padding: 0 0 10px 0;
+	text-align: right;
+	width: 50%;
+	border-bottom: 2px solid #ccc;
+	display: none;
+}
+
+nav.menu-mobile i{
+	font-size: 23px;
+	cursor: pointer;
+}
+
+nav.menu-mobile ul{
+	display: none;
+	position: absolute;
+	top: 70px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	background-color: rgb(0,0,0,0.2);
+	cursor: pointer;
+}
+
+nav.menu-mobile ul li{
+	transition: 0.4s;
+}
+
+nav.menu-mobile ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+nav.menu-mobile ul li:hover{
+	background-color: #F13C20;
+}
+
+.texto-banner{
+	padding: 140px 0 20px 0;
+	color: white;
+}
+
+b{
+	color: #F13C20;
+}
+
+.texto-banner h1{
+	font-weight: 400;
+}
+
+.texto-banner p{
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.btn1{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 25px;
+	background-color: #F13C20;
+}
+
+.btn1 a{
+	color: white;
+	text-decoration: none;
+}
+
+section.planos{
+	background-color: #ccc;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.linha-texto{
+	position: relative;
+	display: inline-block;
+	top: 10px;
+}
+
+.linha-texto > div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2px;
+	background: #F13C20;
+}
+
+.linha-texto h2{
+	font-weight: 400;
+}
+
+section.planos-descricao{
+	padding: 30px 0;
+}
+
+.background{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	font-weight: 400;
+	font-size: 21px;
+	background-color: #F13C20;
+}
+
+.plano-flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.espaco-lateral{
+	width: 33.3%;
+	padding: 20px;
+	text-align: center;
+}
+
+.plano-flex-single{
+	height: 100%;
+	min-height: 350px;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(170,170,170,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(170,170,170,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(170,170,170,0.75);
+}
+
+.descricao-plano-flex-single{
+	padding: 8px 0 15px 0;
+}
+
+.descricao-plano-flex-single p{
+	text-align: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.preco{
+	padding: 15px 0;
+}
+
+section.sobre{
+	padding: 30px 0;
+	position: relative;
+}
+
+.foto-sobre{
+	position: relative;
+	width: 100%;
+	min-height: 65vh;
+	background-attachment: fixed;
+	background-image: url('../imagens/imagem-sobre.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.texto-sobre{
+	padding-top: 20px;
+	position: relative;
+	text-align: center;
+	color: white;
+	z-index: 3;
+}
+
+.texto-sobre p{
+	margin-top: 10px;
+}
+
+section.contato{
+	padding: 30px 0;
+}
+
+.flex-contato-equipe{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box-contato{
+	width: 50%;
+}
+
+.box-equipe{
+	width: 50%;
+}
+
+form{
+	padding: 20px 0 0 0;
+}
+
+.input-formulario{
+	padding: 10px 0;
+}
+
+.input-formulario input[type=text]{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	font-size: 15px;
+	outline: 0;
+}
+
+.input-formulario textarea{
+	width: 100%;
+	height: 250px;
+	padding: 10px;
+	font-size: 15px;
+	resize: none;
+	outline: 0;
+}
+
+.input-formulario input[type=submit]{
+	color: white;
+	border: 0;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.flex-equipe{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-single-wraper{
+	padding: 10px;
+	width: 50%;
+}
+
+.equipe-membro{
+	height: 100%;
+	min-height: 250px;
+	border: 1px solid #ccc;
+	padding: 8px 0 15px 8px; 
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(170,170,170,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(170,170,170,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(170,170,170,0.75);
+}
+
+.equipe-membro-foto{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 30px;
+	background: #ccc;
+}
+
+.equipe-membro-funcao{
+	display: inline-block;
+}
+
+.equipe-membro-funcao h3{
+	font-weight: 700;
+}
+
+.equipe-membro-funcao p{
+	font-weight: 300;
+}
+
+.equipe-membro-descricao{
+	margin-top: 20px;
+}
+
+.equipe-membro-descricao p{
+	font-weight: 300;
+	text-align: left;
+}
+
+input[type=submit]:hover{
+	background: #a8200b;
+}
+
+@media screen and (max-width: 768px){
+
+	.espaco-lateral{
+		width: 100%;
+	}
+
+	.foto-sobre{
+		min-height: 90vh;
+	}
+
+
+	.box-contato{
+		width: 100%;
+		text-align: center;
+		margin-left: 0 auto;
+	}
+	
+	.box-equipe{
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px 2% 0 0;
+	}
+
+	.box-equipe > .linha-texto{
+		margin: 0;
+	}
+
+	nav.menu-desktop{
+		display: none;
+	}
+
+	nav.menu-mobile{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 580px){
+
+	.flex-single-wraper{
+		padding: 10px 0 10px 0;
+		width: 100%;
+	}
+}
